@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Andrew Wilson. All rights reserved.
 //
 
+// good job, 100%
+
 #import "CSCI494ViewController.h"
 
 @interface CSCI494ViewController ()
