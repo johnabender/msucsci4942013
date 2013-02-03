@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="PCViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" delaysContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xk5-XP-ZOa">
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="jja-qa-s0l"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="mJ8-5P-QP0">
+                                <connections>
+                                    <action selector="pageChanged" destination="2" eventType="valueChanged" id="uIu-8l-Bqy"/>
+                                </connections>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mJ8-5P-QP0" firstAttribute="top" secondItem="3" secondAttribute="top" constant="519" id="9lM-ej-YqK"/>
+                            <constraint firstItem="mJ8-5P-QP0" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="VDZ-yd-pL5"/>
+                            <constraint firstItem="xk5-XP-ZOa" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Vhc-vJ-BTs"/>
+                            <constraint firstItem="mJ8-5P-QP0" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="a1x-3W-LY8"/>
+                            <constraint firstItem="xk5-XP-ZOa" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="gT1-D7-Cgm"/>
+                            <constraint firstAttribute="bottom" secondItem="xk5-XP-ZOa" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="mfu-YF-2Om"/>
+                            <constraint firstItem="xk5-XP-ZOa" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="yIB-gY-RQd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="mJ8-5P-QP0" id="pGB-eE-TUg"/>
+                        <outlet property="scrollView" destination="xk5-XP-ZOa" id="6Gn-O7-ru4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
