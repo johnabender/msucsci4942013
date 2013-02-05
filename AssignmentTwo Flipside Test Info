@@ -1,0 +1,99 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+2    	
+-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+3	  	
+-<plist version="1.0">
+4	  	
+-<dict>
+5	  	
+-  <key>CFBundleDevelopmentRegion</key>
+6	  	
+-  <string>en</string>
+7	  	
+-  <key>CFBundleDisplayName</key>
+8	  	
+-  <string>${PRODUCT_NAME}</string>
+9	  	
+-  <key>CFBundleExecutable</key>
+10	  	
+-  <string>${EXECUTABLE_NAME}</string>
+11	  	
+-  <key>CFBundleIdentifier</key>
+12	  	
+-  <string>CSCI494.${PRODUCT_NAME:rfc1034identifier}</string>
+13	  	
+-  <key>CFBundleInfoDictionaryVersion</key>
+14	  	
+-  <string>6.0</string>
+15	  	
+-  <key>CFBundleName</key>
+16	  	
+-  <string>${PRODUCT_NAME}</string>
+17	  	
+-  <key>CFBundlePackageType</key>
+18	  	
+-  <string>APPL</string>
+19	  	
+-  <key>CFBundleShortVersionString</key>
+20	  	
+-  <string>1.0</string>
+21	  	
+-  <key>CFBundleSignature</key>
+22	  	
+-  <string>????</string>
+23	  	
+-  <key>CFBundleVersion</key>
+24	  	
+-  <string>1.0</string>
+25	  	
+-  <key>LSRequiresIPhoneOS</key>
+26	  	
+-  <true/>
+27	  	
+-  <key>UIMainStoryboardFile</key>
+28	  	
+-  <string>MainStoryboard</string>
+29	  	
+-  <key>UIRequiredDeviceCapabilities</key>
+30	  	
+-  <array>
+31	  	
+-    <string>armv7</string>
+32	  	
+-  </array>
+33	  	
+-  <key>UIStatusBarTintParameters</key>
+34	  	
+-  <dict>
+35	  	
+-    <key>UINavigationBar</key>
+36	  	
+-    <dict>
+37	  	
+-      <key>Style</key>
+38	  	
+-      <string>UIBarStyleBlack</string>
+39	  	
+-      <key>Translucent</key>
+40	  	
+-      <false/>
+41	  	
+-    </dict>
+42	  	
+-  </dict>
+43	  	
+-  <key>UISupportedInterfaceOrientations</key>
+44	  	
+-  <array>
+45	  	
+-    <string>UIInterfaceOrientationPortrait</string>
+46	  	
+-    <string>UIInterfaceOrientationLandscapeLeft</string>
+47	  	
+-    <string>UIInterfaceOrientationLandscapeRight</string>
+48	  	
+-  </array>
+49	  	
+-</dict>
+50	  	
+-</plist>
