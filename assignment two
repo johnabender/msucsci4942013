@@ -1,0 +1,983 @@
+-// !$*UTF8*$!
+2    	
+-{
+3	  	
+-  archiveVersion = 1;
+4	  	
+-  classes = {
+5	  	
+-  };
+6	  	
+-  objectVersion = 46;
+7	  	
+-  objects = {
+8	  	
+-
+9	  	
+-/* Begin PBXBuildFile section */
+10	  	
+-    C822FB8116B878F800075C07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C822FB8016B878F800075C07 /* UIKit.framework */; };
+11	  	
+-    C822FB8316B878F800075C07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C822FB8216B878F800075C07 /* Foundation.framework */; };
+12	  	
+-    C822FB8516B878F800075C07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C822FB8416B878F800075C07 /* CoreGraphics.framework */; };
+13	  	
+-    C822FB8716B878F800075C07 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C822FB8616B878F800075C07 /* CoreData.framework */; };
+14	  	
+-    C822FB8D16B878F800075C07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C822FB8B16B878F800075C07 /* InfoPlist.strings */; };
+15	  	
+-    C822FB8F16B878F800075C07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C822FB8E16B878F800075C07 /* main.m */; };
+16	  	
+-    C822FB9316B878F800075C07 /* CSCI494AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C822FB9216B878F800075C07 /* CSCI494AppDelegate.m */; };
+17	  	
+-    C822FB9516B878F800075C07 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C822FB9416B878F800075C07 /* Default.png */; };
+18	  	
+-    C822FB9716B878F800075C07 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C822FB9616B878F800075C07 /* Default@2x.png */; };
+19	  	
+-    C822FB9916B878F800075C07 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C822FB9816B878F800075C07 /* Default-568h@2x.png */; };
+20	  	
+-    C822FB9C16B878F800075C07 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C822FB9A16B878F800075C07 /* MainStoryboard.storyboard */; };
+21	  	
+-    C822FB9F16B878F800075C07 /* Flipside_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C822FB9D16B878F800075C07 /* Flipside_Test.xcdatamodeld */; };
+22	  	
+-    C822FBA216B878F800075C07 /* CSCI494MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C822FBA116B878F800075C07 /* CSCI494MainViewController.m */; };
+23	  	
+-    C822FBA516B878F800075C07 /* CSCI494FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C822FBA416B878F800075C07 /* CSCI494FlipsideViewController.m */; };
+24	  	
+-    C822FBAD16B878F800075C07 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C822FBAC16B878F800075C07 /* SenTestingKit.framework */; };
+25	  	
+-    C822FBAE16B878F800075C07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C822FB8016B878F800075C07 /* UIKit.framework */; };
+26	  	
+-    C822FBAF16B878F800075C07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C822FB8216B878F800075C07 /* Foundation.framework */; };
+27	  	
+-    C822FBB016B878F800075C07 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C822FB8616B878F800075C07 /* CoreData.framework */; };
+28	  	
+-    C822FBB816B878F900075C07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C822FBB616B878F900075C07 /* InfoPlist.strings */; };
+29	  	
+-    C822FBBB16B878F900075C07 /* Flipside_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C822FBBA16B878F900075C07 /* Flipside_TestTests.m */; };
+30	  	
+-/* End PBXBuildFile section */
+31	  	
+-
+32	  	
+-/* Begin PBXContainerItemProxy section */
+33	  	
+-    C822FBB116B878F900075C07 /* PBXContainerItemProxy */ = {
+34	  	
+-      isa = PBXContainerItemProxy;
+35	  	
+-      containerPortal = C822FB7316B878F800075C07 /* Project object */;
+36	  	
+-      proxyType = 1;
+37	  	
+-      remoteGlobalIDString = C822FB7B16B878F800075C07;
+38	  	
+-      remoteInfo = "Flipside Test";
+39	  	
+-    };
+40	  	
+-/* End PBXContainerItemProxy section */
+41	  	
+-
+42	  	
+-/* Begin PBXFileReference section */
+43	  	
+-    C822FB7C16B878F800075C07 /* Flipside Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flipside Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+44	  	
+-    C822FB8016B878F800075C07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+45	  	
+-    C822FB8216B878F800075C07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+46	  	
+-    C822FB8416B878F800075C07 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+47	  	
+-    C822FB8616B878F800075C07 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+48	  	
+-    C822FB8A16B878F800075C07 /* Flipside Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flipside Test-Info.plist"; sourceTree = "<group>"; };
+49	  	
+-    C822FB8C16B878F800075C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+50	  	
+-    C822FB8E16B878F800075C07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+51	  	
+-    C822FB9016B878F800075C07 /* Flipside Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Flipside Test-Prefix.pch"; sourceTree = "<group>"; };
+52	  	
+-    C822FB9116B878F800075C07 /* CSCI494AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSCI494AppDelegate.h; sourceTree = "<group>"; };
+53	  	
+-    C822FB9216B878F800075C07 /* CSCI494AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSCI494AppDelegate.m; sourceTree = "<group>"; };
+54	  	
+-    C822FB9416B878F800075C07 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+55	  	
+-    C822FB9616B878F800075C07 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+56	  	
+-    C822FB9816B878F800075C07 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+57	  	
+-    C822FB9B16B878F800075C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+58	  	
+-    C822FB9E16B878F800075C07 /* Flipside_Test.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Flipside_Test.xcdatamodel; sourceTree = "<group>"; };
+59	  	
+-    C822FBA016B878F800075C07 /* CSCI494MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSCI494MainViewController.h; sourceTree = "<group>"; };
+60	  	
+-    C822FBA116B878F800075C07 /* CSCI494MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSCI494MainViewController.m; sourceTree = "<group>"; };
+61	  	
+-    C822FBA316B878F800075C07 /* CSCI494FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSCI494FlipsideViewController.h; sourceTree = "<group>"; };
+62	  	
+-    C822FBA416B878F800075C07 /* CSCI494FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSCI494FlipsideViewController.m; sourceTree = "<group>"; };
+63	  	
+-    C822FBAB16B878F800075C07 /* Flipside TestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flipside TestTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+64	  	
+-    C822FBAC16B878F800075C07 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+65	  	
+-    C822FBB516B878F900075C07 /* Flipside TestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Flipside TestTests-Info.plist"; sourceTree = "<group>"; };
+66	  	
+-    C822FBB716B878F900075C07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+67	  	
+-    C822FBB916B878F900075C07 /* Flipside_TestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flipside_TestTests.h; sourceTree = "<group>"; };
+68	  	
+-    C822FBBA16B878F900075C07 /* Flipside_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flipside_TestTests.m; sourceTree = "<group>"; };
+69	  	
+-/* End PBXFileReference section */
+70	  	
+-
+71	  	
+-/* Begin PBXFrameworksBuildPhase section */
+72	  	
+-    C822FB7916B878F800075C07 /* Frameworks */ = {
+73	  	
+-      isa = PBXFrameworksBuildPhase;
+74	  	
+-      buildActionMask = 2147483647;
+75	  	
+-      files = (
+76	  	
+-        C822FB8116B878F800075C07 /* UIKit.framework in Frameworks */,
+77	  	
+-        C822FB8316B878F800075C07 /* Foundation.framework in Frameworks */,
+78	  	
+-        C822FB8516B878F800075C07 /* CoreGraphics.framework in Frameworks */,
+79	  	
+-        C822FB8716B878F800075C07 /* CoreData.framework in Frameworks */,
+80	  	
+-      );
+81	  	
+-      runOnlyForDeploymentPostprocessing = 0;
+82	  	
+-    };
+83	  	
+-    C822FBA716B878F800075C07 /* Frameworks */ = {
+84	  	
+-      isa = PBXFrameworksBuildPhase;
+85	  	
+-      buildActionMask = 2147483647;
+86	  	
+-      files = (
+87	  	
+-        C822FBAD16B878F800075C07 /* SenTestingKit.framework in Frameworks */,
+88	  	
+-        C822FBAE16B878F800075C07 /* UIKit.framework in Frameworks */,
+89	  	
+-        C822FBAF16B878F800075C07 /* Foundation.framework in Frameworks */,
+90	  	
+-        C822FBB016B878F800075C07 /* CoreData.framework in Frameworks */,
+91	  	
+-      );
+92	  	
+-      runOnlyForDeploymentPostprocessing = 0;
+93	  	
+-    };
+94	  	
+-/* End PBXFrameworksBuildPhase section */
+95	  	
+-
+96	  	
+-/* Begin PBXGroup section */
+97	  	
+-    C822FB7116B878F800075C07 = {
+98	  	
+-      isa = PBXGroup;
+99	  	
+-      children = (
+100	  	
+-        C822FB8816B878F800075C07 /* Flipside Test */,
+101	  	
+-        C822FBB316B878F900075C07 /* Flipside TestTests */,
+102	  	
+-        C822FB7F16B878F800075C07 /* Frameworks */,
+103	  	
+-        C822FB7D16B878F800075C07 /* Products */,
+104	  	
+-      );
+105	  	
+-      sourceTree = "<group>";
+106	  	
+-    };
+107	  	
+-    C822FB7D16B878F800075C07 /* Products */ = {
+108	  	
+-      isa = PBXGroup;
+109	  	
+-      children = (
+110	  	
+-        C822FB7C16B878F800075C07 /* Flipside Test.app */,
+111	  	
+-        C822FBAB16B878F800075C07 /* Flipside TestTests.octest */,
+112	  	
+-      );
+113	  	
+-      name = Products;
+114	  	
+-      sourceTree = "<group>";
+115	  	
+-    };
+116	  	
+-    C822FB7F16B878F800075C07 /* Frameworks */ = {
+117	  	
+-      isa = PBXGroup;
+118	  	
+-      children = (
+119	  	
+-        C822FB8016B878F800075C07 /* UIKit.framework */,
+120	  	
+-        C822FB8216B878F800075C07 /* Foundation.framework */,
+121	  	
+-        C822FB8416B878F800075C07 /* CoreGraphics.framework */,
+122	  	
+-        C822FB8616B878F800075C07 /* CoreData.framework */,
+123	  	
+-        C822FBAC16B878F800075C07 /* SenTestingKit.framework */,
+124	  	
+-      );
+125	  	
+-      name = Frameworks;
+126	  	
+-      sourceTree = "<group>";
+127	  	
+-    };
+128	  	
+-    C822FB8816B878F800075C07 /* Flipside Test */ = {
+129	  	
+-      isa = PBXGroup;
+130	  	
+-      children = (
+131	  	
+-        C822FB9116B878F800075C07 /* CSCI494AppDelegate.h */,
+132	  	
+-        C822FB9216B878F800075C07 /* CSCI494AppDelegate.m */,
+133	  	
+-        C822FB9A16B878F800075C07 /* MainStoryboard.storyboard */,
+134	  	
+-        C822FBA016B878F800075C07 /* CSCI494MainViewController.h */,
+135	  	
+-        C822FBA116B878F800075C07 /* CSCI494MainViewController.m */,
+136	  	
+-        C822FBA316B878F800075C07 /* CSCI494FlipsideViewController.h */,
+137	  	
+-        C822FBA416B878F800075C07 /* CSCI494FlipsideViewController.m */,
+138	  	
+-        C822FB9D16B878F800075C07 /* Flipside_Test.xcdatamodeld */,
+139	  	
+-        C822FB8916B878F800075C07 /* Supporting Files */,
+140	  	
+-      );
+141	  	
+-      path = "Flipside Test";
+142	  	
+-      sourceTree = "<group>";
+143	  	
+-    };
+144	  	
+-    C822FB8916B878F800075C07 /* Supporting Files */ = {
+145	  	
+-      isa = PBXGroup;
+146	  	
+-      children = (
+147	  	
+-        C822FB8A16B878F800075C07 /* Flipside Test-Info.plist */,
+148	  	
+-        C822FB8B16B878F800075C07 /* InfoPlist.strings */,
+149	  	
+-        C822FB8E16B878F800075C07 /* main.m */,
+150	  	
+-        C822FB9016B878F800075C07 /* Flipside Test-Prefix.pch */,
+151	  	
+-        C822FB9416B878F800075C07 /* Default.png */,
+152	  	
+-        C822FB9616B878F800075C07 /* Default@2x.png */,
+153	  	
+-        C822FB9816B878F800075C07 /* Default-568h@2x.png */,
+154	  	
+-      );
+155	  	
+-      name = "Supporting Files";
+156	  	
+-      sourceTree = "<group>";
+157	  	
+-    };
+158	  	
+-    C822FBB316B878F900075C07 /* Flipside TestTests */ = {
+159	  	
+-      isa = PBXGroup;
+160	  	
+-      children = (
+161	  	
+-        C822FBB916B878F900075C07 /* Flipside_TestTests.h */,
+162	  	
+-        C822FBBA16B878F900075C07 /* Flipside_TestTests.m */,
+163	  	
+-        C822FBB416B878F900075C07 /* Supporting Files */,
+164	  	
+-      );
+165	  	
+-      path = "Flipside TestTests";
+166	  	
+-      sourceTree = "<group>";
+167	  	
+-    };
+168	  	
+-    C822FBB416B878F900075C07 /* Supporting Files */ = {
+169	  	
+-      isa = PBXGroup;
+170	  	
+-      children = (
+171	  	
+-        C822FBB516B878F900075C07 /* Flipside TestTests-Info.plist */,
+172	  	
+-        C822FBB616B878F900075C07 /* InfoPlist.strings */,
+173	  	
+-      );
+174	  	
+-      name = "Supporting Files";
+175	  	
+-      sourceTree = "<group>";
+176	  	
+-    };
+177	  	
+-/* End PBXGroup section */
+178	  	
+-
+179	  	
+-/* Begin PBXNativeTarget section */
+180	  	
+-    C822FB7B16B878F800075C07 /* Flipside Test */ = {
+181	  	
+-      isa = PBXNativeTarget;
+182	  	
+-      buildConfigurationList = C822FBBE16B878F900075C07 /* Build configuration list for PBXNativeTarget "Flipside Test" */;
+183	  	
+-      buildPhases = (
+184	  	
+-        C822FB7816B878F800075C07 /* Sources */,
+185	  	
+-        C822FB7916B878F800075C07 /* Frameworks */,
+186	  	
+-        C822FB7A16B878F800075C07 /* Resources */,
+187	  	
+-      );
+188	  	
+-      buildRules = (
+189	  	
+-      );
+190	  	
+-      dependencies = (
+191	  	
+-      );
+192	  	
+-      name = "Flipside Test";
+193	  	
+-      productName = "Flipside Test";
+194	  	
+-      productReference = C822FB7C16B878F800075C07 /* Flipside Test.app */;
+195	  	
+-      productType = "com.apple.product-type.application";
+196	  	
+-    };
+197	  	
+-    C822FBAA16B878F800075C07 /* Flipside TestTests */ = {
+198	  	
+-      isa = PBXNativeTarget;
+199	  	
+-      buildConfigurationList = C822FBC116B878F900075C07 /* Build configuration list for PBXNativeTarget "Flipside TestTests" */;
+200	  	
+-      buildPhases = (
+201	  	
+-        C822FBA616B878F800075C07 /* Sources */,
+202	  	
+-        C822FBA716B878F800075C07 /* Frameworks */,
+203	  	
+-        C822FBA816B878F800075C07 /* Resources */,
+204	  	
+-        C822FBA916B878F800075C07 /* ShellScript */,
+205	  	
+-      );
+206	  	
+-      buildRules = (
+207	  	
+-      );
+208	  	
+-      dependencies = (
+209	  	
+-        C822FBB216B878F900075C07 /* PBXTargetDependency */,
+210	  	
+-      );
+211	  	
+-      name = "Flipside TestTests";
+212	  	
+-      productName = "Flipside TestTests";
+213	  	
+-      productReference = C822FBAB16B878F800075C07 /* Flipside TestTests.octest */;
+214	  	
+-      productType = "com.apple.product-type.bundle";
+215	  	
+-    };
+216	  	
+-/* End PBXNativeTarget section */
+217	  	
+-
+218	  	
+-/* Begin PBXProject section */
+219	  	
+-    C822FB7316B878F800075C07 /* Project object */ = {
+220	  	
+-      isa = PBXProject;
+221	  	
+-      attributes = {
+222	  	
+-        CLASSPREFIX = CSCI494;
+223	  	
+-        LastUpgradeCheck = 0450;
+224	  	
+-        ORGANIZATIONNAME = "Andrew Wilson";
+225	  	
+-      };
+226	  	
+-      buildConfigurationList = C822FB7616B878F800075C07 /* Build configuration list for PBXProject "Flipside Test" */;
+227	  	
+-      compatibilityVersion = "Xcode 3.2";
+228	  	
+-      developmentRegion = English;
+229	  	
+-      hasScannedForEncodings = 0;
+230	  	
+-      knownRegions = (
+231	  	
+-        en,
+232	  	
+-      );
+233	  	
+-      mainGroup = C822FB7116B878F800075C07;
+234	  	
+-      productRefGroup = C822FB7D16B878F800075C07 /* Products */;
+235	  	
+-      projectDirPath = "";
+236	  	
+-      projectRoot = "";
+237	  	
+-      targets = (
+238	  	
+-        C822FB7B16B878F800075C07 /* Flipside Test */,
+239	  	
+-        C822FBAA16B878F800075C07 /* Flipside TestTests */,
+240	  	
+-      );
+241	  	
+-    };
+242	  	
+-/* End PBXProject section */
+243	  	
+-
+244	  	
+-/* Begin PBXResourcesBuildPhase section */
+245	  	
+-    C822FB7A16B878F800075C07 /* Resources */ = {
+246	  	
+-      isa = PBXResourcesBuildPhase;
+247	  	
+-      buildActionMask = 2147483647;
+248	  	
+-      files = (
+249	  	
+-        C822FB8D16B878F800075C07 /* InfoPlist.strings in Resources */,
+250	  	
+-        C822FB9516B878F800075C07 /* Default.png in Resources */,
+251	  	
+-        C822FB9716B878F800075C07 /* Default@2x.png in Resources */,
+252	  	
+-        C822FB9916B878F800075C07 /* Default-568h@2x.png in Resources */,
+253	  	
+-        C822FB9C16B878F800075C07 /* MainStoryboard.storyboard in Resources */,
+254	  	
+-      );
+255	  	
+-      runOnlyForDeploymentPostprocessing = 0;
+256	  	
+-    };
+257	  	
+-    C822FBA816B878F800075C07 /* Resources */ = {
+258	  	
+-      isa = PBXResourcesBuildPhase;
+259	  	
+-      buildActionMask = 2147483647;
+260	  	
+-      files = (
+261	  	
+-        C822FBB816B878F900075C07 /* InfoPlist.strings in Resources */,
+262	  	
+-      );
+263	  	
+-      runOnlyForDeploymentPostprocessing = 0;
+264	  	
+-    };
+265	  	
+-/* End PBXResourcesBuildPhase section */
+266	  	
+-
+267	  	
+-/* Begin PBXShellScriptBuildPhase section */
+268	  	
+-    C822FBA916B878F800075C07 /* ShellScript */ = {
+269	  	
+-      isa = PBXShellScriptBuildPhase;
+270	  	
+-      buildActionMask = 2147483647;
+271	  	
+-      files = (
+272	  	
+-      );
+273	  	
+-      inputPaths = (
+274	  	
+-      );
+275	  	
+-      outputPaths = (
+276	  	
+-      );
+277	  	
+-      runOnlyForDeploymentPostprocessing = 0;
+278	  	
+-      shellPath = /bin/sh;
+279	  	
+-      shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+280	  	
+-    };
+281	  	
+-/* End PBXShellScriptBuildPhase section */
+282	  	
+-
+283	  	
+-/* Begin PBXSourcesBuildPhase section */
+284	  	
+-    C822FB7816B878F800075C07 /* Sources */ = {
+285	  	
+-      isa = PBXSourcesBuildPhase;
+286	  	
+-      buildActionMask = 2147483647;
+287	  	
+-      files = (
+288	  	
+-        C822FB8F16B878F800075C07 /* main.m in Sources */,
+289	  	
+-        C822FB9316B878F800075C07 /* CSCI494AppDelegate.m in Sources */,
+290	  	
+-        C822FB9F16B878F800075C07 /* Flipside_Test.xcdatamodeld in Sources */,
+291	  	
+-        C822FBA216B878F800075C07 /* CSCI494MainViewController.m in Sources */,
+292	  	
+-        C822FBA516B878F800075C07 /* CSCI494FlipsideViewController.m in Sources */,
+293	  	
+-      );
+294	  	
+-      runOnlyForDeploymentPostprocessing = 0;
+295	  	
+-    };
+296	  	
+-    C822FBA616B878F800075C07 /* Sources */ = {
+297	  	
+-      isa = PBXSourcesBuildPhase;
+298	  	
+-      buildActionMask = 2147483647;
+299	  	
+-      files = (
+300	  	
+-        C822FBBB16B878F900075C07 /* Flipside_TestTests.m in Sources */,
+301	  	
+-      );
+302	  	
+-      runOnlyForDeploymentPostprocessing = 0;
+303	  	
+-    };
+304	  	
+-/* End PBXSourcesBuildPhase section */
+305	  	
+-
+306	  	
+-/* Begin PBXTargetDependency section */
+307	  	
+-    C822FBB216B878F900075C07 /* PBXTargetDependency */ = {
+308	  	
+-      isa = PBXTargetDependency;
+309	  	
+-      target = C822FB7B16B878F800075C07 /* Flipside Test */;
+310	  	
+-      targetProxy = C822FBB116B878F900075C07 /* PBXContainerItemProxy */;
+311	  	
+-    };
+312	  	
+-/* End PBXTargetDependency section */
+313	  	
+-
+314	  	
+-/* Begin PBXVariantGroup section */
+315	  	
+-    C822FB8B16B878F800075C07 /* InfoPlist.strings */ = {
+316	  	
+-      isa = PBXVariantGroup;
+317	  	
+-      children = (
+318	  	
+-        C822FB8C16B878F800075C07 /* en */,
+319	  	
+-      );
+320	  	
+-      name = InfoPlist.strings;
+321	  	
+-      sourceTree = "<group>";
+322	  	
+-    };
+323	  	
+-    C822FB9A16B878F800075C07 /* MainStoryboard.storyboard */ = {
+324	  	
+-      isa = PBXVariantGroup;
+325	  	
+-      children = (
+326	  	
+-        C822FB9B16B878F800075C07 /* en */,
+327	  	
+-      );
+328	  	
+-      name = MainStoryboard.storyboard;
+329	  	
+-      sourceTree = "<group>";
+330	  	
+-    };
+331	  	
+-    C822FBB616B878F900075C07 /* InfoPlist.strings */ = {
+332	  	
+-      isa = PBXVariantGroup;
+333	  	
+-      children = (
+334	  	
+-        C822FBB716B878F900075C07 /* en */,
+335	  	
+-      );
+336	  	
+-      name = InfoPlist.strings;
+337	  	
+-      sourceTree = "<group>";
+338	  	
+-    };
+339	  	
+-/* End PBXVariantGroup section */
+340	  	
+-
+341	  	
+-/* Begin XCBuildConfiguration section */
+342	  	
+-    C822FBBC16B878F900075C07 /* Debug */ = {
+343	  	
+-      isa = XCBuildConfiguration;
+344	  	
+-      buildSettings = {
+345	  	
+-        ALWAYS_SEARCH_USER_PATHS = NO;
+346	  	
+-        CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+347	  	
+-        CLANG_CXX_LIBRARY = "libc++";
+348	  	
+-        CLANG_ENABLE_OBJC_ARC = YES;
+349	  	
+-        CLANG_WARN_EMPTY_BODY = YES;
+350	  	
+-        CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+351	  	
+-        "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+352	  	
+-        COPY_PHASE_STRIP = NO;
+353	  	
+-        GCC_C_LANGUAGE_STANDARD = gnu99;
+354	  	
+-        GCC_DYNAMIC_NO_PIC = NO;
+355	  	
+-        GCC_OPTIMIZATION_LEVEL = 0;
+356	  	
+-        GCC_PREPROCESSOR_DEFINITIONS = (
+357	  	
+-          "DEBUG=1",
+358	  	
+-          "$(inherited)",
+359	  	
+-        );
+360	  	
+-        GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+361	  	
+-        GCC_WARN_ABOUT_RETURN_TYPE = YES;
+362	  	
+-        GCC_WARN_UNINITIALIZED_AUTOS = YES;
+363	  	
+-        GCC_WARN_UNUSED_VARIABLE = YES;
+364	  	
+-        IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+365	  	
+-        ONLY_ACTIVE_ARCH = YES;
+366	  	
+-        SDKROOT = iphoneos;
+367	  	
+-      };
+368	  	
+-      name = Debug;
+369	  	
+-    };
+370	  	
+-    C822FBBD16B878F900075C07 /* Release */ = {
+371	  	
+-      isa = XCBuildConfiguration;
+372	  	
+-      buildSettings = {
+373	  	
+-        ALWAYS_SEARCH_USER_PATHS = NO;
+374	  	
+-        CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+375	  	
+-        CLANG_CXX_LIBRARY = "libc++";
+376	  	
+-        CLANG_ENABLE_OBJC_ARC = YES;
+377	  	
+-        CLANG_WARN_EMPTY_BODY = YES;
+378	  	
+-        CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+379	  	
+-        "CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+380	  	
+-        COPY_PHASE_STRIP = YES;
+381	  	
+-        GCC_C_LANGUAGE_STANDARD = gnu99;
+382	  	
+-        GCC_WARN_ABOUT_RETURN_TYPE = YES;
+383	  	
+-        GCC_WARN_UNINITIALIZED_AUTOS = YES;
+384	  	
+-        GCC_WARN_UNUSED_VARIABLE = YES;
+385	  	
+-        IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+386	  	
+-        OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+387	  	
+-        SDKROOT = iphoneos;
+388	  	
+-        VALIDATE_PRODUCT = YES;
+389	  	
+-      };
+390	  	
+-      name = Release;
+391	  	
+-    };
+392	  	
+-    C822FBBF16B878F900075C07 /* Debug */ = {
+393	  	
+-      isa = XCBuildConfiguration;
+394	  	
+-      buildSettings = {
+395	  	
+-        GCC_PRECOMPILE_PREFIX_HEADER = YES;
+396	  	
+-        GCC_PREFIX_HEADER = "Flipside Test/Flipside Test-Prefix.pch";
+397	  	
+-        INFOPLIST_FILE = "Flipside Test/Flipside Test-Info.plist";
+398	  	
+-        PRODUCT_NAME = "$(TARGET_NAME)";
+399	  	
+-        WRAPPER_EXTENSION = app;
+400	  	
+-      };
+401	  	
+-      name = Debug;
+402	  	
+-    };
+403	  	
+-    C822FBC016B878F900075C07 /* Release */ = {
+404	  	
+-      isa = XCBuildConfiguration;
+405	  	
+-      buildSettings = {
+406	  	
+-        GCC_PRECOMPILE_PREFIX_HEADER = YES;
+407	  	
+-        GCC_PREFIX_HEADER = "Flipside Test/Flipside Test-Prefix.pch";
+408	  	
+-        INFOPLIST_FILE = "Flipside Test/Flipside Test-Info.plist";
+409	  	
+-        PRODUCT_NAME = "$(TARGET_NAME)";
+410	  	
+-        WRAPPER_EXTENSION = app;
+411	  	
+-      };
+412	  	
+-      name = Release;
+413	  	
+-    };
+414	  	
+-    C822FBC216B878F900075C07 /* Debug */ = {
+415	  	
+-      isa = XCBuildConfiguration;
+416	  	
+-      buildSettings = {
+417	  	
+-        BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flipside Test.app/Flipside Test";
+418	  	
+-        FRAMEWORK_SEARCH_PATHS = (
+419	  	
+-          "\"$(SDKROOT)/Developer/Library/Frameworks\"",
+420	  	
+-          "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+421	  	
+-        );
+422	  	
+-        GCC_PRECOMPILE_PREFIX_HEADER = YES;
+423	  	
+-        GCC_PREFIX_HEADER = "Flipside Test/Flipside Test-Prefix.pch";
+424	  	
+-        INFOPLIST_FILE = "Flipside TestTests/Flipside TestTests-Info.plist";
+425	  	
+-        PRODUCT_NAME = "$(TARGET_NAME)";
+426	  	
+-        TEST_HOST = "$(BUNDLE_LOADER)";
+427	  	
+-        WRAPPER_EXTENSION = octest;
+428	  	
+-      };
+429	  	
+-      name = Debug;
+430	  	
+-    };
+431	  	
+-    C822FBC316B878F900075C07 /* Release */ = {
+432	  	
+-      isa = XCBuildConfiguration;
+433	  	
+-      buildSettings = {
+434	  	
+-        BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Flipside Test.app/Flipside Test";
+435	  	
+-        FRAMEWORK_SEARCH_PATHS = (
+436	  	
+-          "\"$(SDKROOT)/Developer/Library/Frameworks\"",
+437	  	
+-          "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+438	  	
+-        );
+439	  	
+-        GCC_PRECOMPILE_PREFIX_HEADER = YES;
+440	  	
+-        GCC_PREFIX_HEADER = "Flipside Test/Flipside Test-Prefix.pch";
+441	  	
+-        INFOPLIST_FILE = "Flipside TestTests/Flipside TestTests-Info.plist";
+442	  	
+-        PRODUCT_NAME = "$(TARGET_NAME)";
+443	  	
+-        TEST_HOST = "$(BUNDLE_LOADER)";
+444	  	
+-        WRAPPER_EXTENSION = octest;
+445	  	
+-      };
+446	  	
+-      name = Release;
+447	  	
+-    };
+448	  	
+-/* End XCBuildConfiguration section */
+449	  	
+-
+450	  	
+-/* Begin XCConfigurationList section */
+451	  	
+-    C822FB7616B878F800075C07 /* Build configuration list for PBXProject "Flipside Test" */ = {
+452	  	
+-      isa = XCConfigurationList;
+453	  	
+-      buildConfigurations = (
+454	  	
+-        C822FBBC16B878F900075C07 /* Debug */,
+455	  	
+-        C822FBBD16B878F900075C07 /* Release */,
+456	  	
+-      );
+457	  	
+-      defaultConfigurationIsVisible = 0;
+458	  	
+-      defaultConfigurationName = Release;
+459	  	
+-    };
+460	  	
+-    C822FBBE16B878F900075C07 /* Build configuration list for PBXNativeTarget "Flipside Test" */ = {
+461	  	
+-      isa = XCConfigurationList;
+462	  	
+-      buildConfigurations = (
+463	  	
+-        C822FBBF16B878F900075C07 /* Debug */,
+464	  	
+-        C822FBC016B878F900075C07 /* Release */,
+465	  	
+-      );
+466	  	
+-      defaultConfigurationIsVisible = 0;
+467	  	
+-    };
+468	  	
+-    C822FBC116B878F900075C07 /* Build configuration list for PBXNativeTarget "Flipside TestTests" */ = {
+469	  	
+-      isa = XCConfigurationList;
+470	  	
+-      buildConfigurations = (
+471	  	
+-        C822FBC216B878F900075C07 /* Debug */,
+472	  	
+-        C822FBC316B878F900075C07 /* Release */,
+473	  	
+-      );
+474	  	
+-      defaultConfigurationIsVisible = 0;
+475	  	
+-    };
+476	  	
+-/* End XCConfigurationList section */
+477	  	
+-
+478	  	
+-/* Begin XCVersionGroup section */
+479	  	
+-    C822FB9D16B878F800075C07 /* Flipside_Test.xcdatamodeld */ = {
+480	  	
+-      isa = XCVersionGroup;
+481	  	
+-      children = (
+482	  	
+-        C822FB9E16B878F800075C07 /* Flipside_Test.xcdatamodel */,
+483	  	
+-      );
+484	  	
+-      currentVersion = C822FB9E16B878F800075C07 /* Flipside_Test.xcdatamodel */;
+485	  	
+-      path = Flipside_Test.xcdatamodeld;
+486	  	
+-      sourceTree = "<group>";
+487	  	
+-      versionGroupType = wrapper.xcdatamodel;
+488	  	
+-    };
+489	  	
+-/* End XCVersionGroup section */
+490	  	
+-  };
+491	  	
+-  rootObject = C822FB7316B878F800075C07 /* Project object */;
+492	  	
+-}
