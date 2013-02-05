@@ -1,0 +1,315 @@
+-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+2    	
+-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+3	  	
+-    <dependencies>
+4	  	
+-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+5	  	
+-    </dependencies>
+6	  	
+-    <scenes>
+7	  	
+-        <!--Main View Controller-->
+8	  	
+-        <scene sceneID="5">
+9	  	
+-            <objects>
+10	  	
+-                <viewController id="2" customClass="CSCI494MainViewController" sceneMemberID="viewController">
+11	  	
+-                    <view key="view" contentMode="scaleToFill" id="3">
+12	  	
+-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+13	  	
+-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+14	  	
+-                        <subviews>
+15	  	
+-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kE6-9f-b10">
+16	  	
+-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+17	  	
+-                                <state key="normal" title="Draw Controller">
+18	  	
+-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+19	  	
+-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+20	  	
+-                                </state>
+21	  	
+-                                <state key="highlighted">
+22	  	
+-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+23	  	
+-                                </state>
+24	  	
+-                                <connections>
+25	  	
+-                                    <segue destination="6" kind="push" id="Lha-65-wIC"/>
+26	  	
+-                                </connections>
+27	  	
+-                            </button>
+28	  	
+-                        </subviews>
+29	  	
+-                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+30	  	
+-                        <constraints>
+31	  	
+-                            <constraint firstAttribute="trailing" secondItem="kE6-9f-b10" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="L4c-nm-Ard"/>
+32	  	
+-                            <constraint firstAttribute="bottom" secondItem="kE6-9f-b10" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="xPi-fr-X51"/>
+33	  	
+-                        </constraints>
+34	  	
+-                    </view>
+35	  	
+-                </viewController>
+36	  	
+-                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+37	  	
+-            </objects>
+38	  	
+-            <point key="canvasLocation" x="-51" y="182"/>
+39	  	
+-        </scene>
+40	  	
+-        <!--Flipside View Controller-->
+41	  	
+-        <scene sceneID="9">
+42	  	
+-            <objects>
+43	  	
+-                <viewController id="6" customClass="CSCI494FlipsideViewController" sceneMemberID="viewController">
+44	  	
+-                    <view key="view" contentMode="scaleToFill" id="7">
+45	  	
+-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+46	  	
+-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+47	  	
+-                        <subviews>
+48	  	
+-                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+49	  	
+-                                <items>
+50	  	
+-                                    <navigationItem title="Title" id="13">
+51	  	
+-                                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="14">
+52	  	
+-                                            <connections>
+53	  	
+-                                                <action selector="done:" destination="6" id="16"/>
+54	  	
+-                                            </connections>
+55	  	
+-                                        </barButtonItem>
+56	  	
+-                                    </navigationItem>
+57	  	
+-                                </items>
+58	  	
+-                            </navigationBar>
+59	  	
+-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ueg-TA-xtI">
+60	  	
+-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+61	  	
+-                                <state key="normal" title="Red">
+62	  	
+-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+63	  	
+-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+64	  	
+-                                </state>
+65	  	
+-                                <state key="highlighted">
+66	  	
+-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+67	  	
+-                                </state>
+68	  	
+-                                <connections>
+69	  	
+-                                    <action selector="Red:" destination="6" eventType="touchUpInside" id="AhG-ci-mYk"/>
+70	  	
+-                                </connections>
+71	  	
+-                            </button>
+72	  	
+-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2QN-fp-dje">
+73	  	
+-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+74	  	
+-                                <state key="normal" title="Blue">
+75	  	
+-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+76	  	
+-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+77	  	
+-                                </state>
+78	  	
+-                                <state key="highlighted">
+79	  	
+-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+80	  	
+-                                </state>
+81	  	
+-                                <connections>
+82	  	
+-                                    <action selector="Blue:" destination="6" eventType="touchUpInside" id="Rus-cW-6vf"/>
+83	  	
+-                                </connections>
+84	  	
+-                            </button>
+85	  	
+-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwO-A5-no0">
+86	  	
+-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+87	  	
+-                                <state key="normal" title="Green">
+88	  	
+-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+89	  	
+-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+90	  	
+-                                </state>
+91	  	
+-                                <state key="highlighted">
+92	  	
+-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+93	  	
+-                                </state>
+94	  	
+-                                <connections>
+95	  	
+-                                    <action selector="Green:" destination="6" eventType="touchUpInside" id="wk2-0a-xJA"/>
+96	  	
+-                                </connections>
+97	  	
+-                            </button>
+98	  	
+-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nR4-Dw-P7n">
+99	  	
+-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+100	  	
+-                                <state key="normal" title="Draw">
+101	  	
+-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+102	  	
+-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+103	  	
+-                                </state>
+104	  	
+-                                <state key="highlighted">
+105	  	
+-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+106	  	
+-                                </state>
+107	  	
+-                                <connections>
+108	  	
+-                                    <action selector="Draw:" destination="6" eventType="touchUpInside" id="xAA-Q6-DwD"/>
+109	  	
+-                                </connections>
+110	  	
+-                            </button>
+111	  	
+-                        </subviews>
+112	  	
+-                        <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+113	  	
+-                        <constraints>
+114	  	
+-                            <constraint firstItem="Ueg-TA-xtI" firstAttribute="top" secondItem="nR4-Dw-P7n" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0lU-UQ-ILw"/>
+115	  	
+-                            <constraint firstAttribute="bottom" secondItem="bwO-A5-no0" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="77y-qm-7pU"/>
+116	  	
+-                            <constraint firstAttribute="bottom" secondItem="Ueg-TA-xtI" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="DvA-EX-XL8"/>
+117	  	
+-                            <constraint firstItem="2QN-fp-dje" firstAttribute="leading" secondItem="Ueg-TA-xtI" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="H4q-Vj-6hh"/>
+118	  	
+-                            <constraint firstItem="Ueg-TA-xtI" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Qvz-lF-LZu"/>
+119	  	
+-                            <constraint firstAttribute="bottom" secondItem="2QN-fp-dje" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="TgN-6U-e8h"/>
+120	  	
+-                            <constraint firstItem="bwO-A5-no0" firstAttribute="leading" secondItem="2QN-fp-dje" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="dMM-0A-oqk"/>
+121	  	
+-                            <constraint firstItem="12" firstAttribute="leading" secondItem="7" secondAttribute="leading" type="default" id="kyL-VC-rMY"/>
+122	  	
+-                            <constraint firstItem="nR4-Dw-P7n" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="mQV-t9-FO5"/>
+123	  	
+-                            <constraint firstItem="12" firstAttribute="top" secondItem="7" secondAttribute="top" type="default" id="oQ7-QK-1Ab"/>
+124	  	
+-                            <constraint firstItem="12" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" type="default" id="yf5-Bx-wHg"/>
+125	  	
+-                        </constraints>
+126	  	
+-                    </view>
+127	  	
+-                    <navigationItem key="navigationItem" id="Kv2-RP-qXg"/>
+128	  	
+-                </viewController>
+129	  	
+-                <placeholder placeholderIdentifier="IBFirstResponder" id="8" sceneMemberID="firstResponder"/>
+130	  	
+-            </objects>
+131	  	
+-            <point key="canvasLocation" x="368" y="182"/>
+132	  	
+-        </scene>
+133	  	
+-    </scenes>
+134	  	
+-    <classes>
+135	  	
+-        <class className="CSCI494FlipsideViewController" superclassName="UIView">
+136	  	
+-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CSCI494FlipsideViewController.h"/>
+137	  	
+-            <relationships>
+138	  	
+-                <relationship kind="action" name="Blue:"/>
+139	  	
+-                <relationship kind="action" name="Draw:"/>
+140	  	
+-                <relationship kind="action" name="Green:"/>
+141	  	
+-                <relationship kind="action" name="Red:"/>
+142	  	
+-                <relationship kind="action" name="done:"/>
+143	  	
+-            </relationships>
+144	  	
+-        </class>
+145	  	
+-        <class className="CSCI494MainViewController" superclassName="UIViewController">
+146	  	
+-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CSCI494MainViewController.h"/>
+147	  	
+-        </class>
+148	  	
+-        <class className="NSLayoutConstraint" superclassName="NSObject">
+149	  	
+-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+150	  	
+-        </class>
+151	  	
+-    </classes>
+152	  	
+-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+153	  	
+-        <simulatedStatusBarMetrics key="statusBar"/>
+154	  	
+-        <simulatedOrientationMetrics key="orientation"/>
+155	  	
+-        <simulatedScreenMetrics key="destination" type="retina4"/>
+156	  	
+-    </simulatedMetricsContainer>
+157	  	
+-</document>
+ 	  	
+\ No newline at end of file
