@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'alert-demo' target in the 'alert-demo' project
+// Prefix header for all source files of the 'control-temo' target in the 'control-temo' project
 //
 
 #import <Availability.h>

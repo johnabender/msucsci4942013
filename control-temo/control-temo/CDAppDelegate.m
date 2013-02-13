@@ -1,14 +1,14 @@
 //
-//  TDAppDelegate.m
-//  alert-demo
+//  CDAppDelegate.m
+//  control-temo
 //
 //  Created by John Bender on 2/13/13.
 //  Copyright (c) 2013 General UI, LLC. All rights reserved.
 //
 
-#import "TDAppDelegate.h"
+#import "CDAppDelegate.h"
 
-@implementation TDAppDelegate
+@implementation CDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

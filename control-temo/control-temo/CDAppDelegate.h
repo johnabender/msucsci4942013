@@ -1,14 +1,14 @@
 //
-//  TDAppDelegate.h
-//  collection-test
+//  CDAppDelegate.h
+//  control-temo
 //
-//  Created by John Bender on 2/11/13.
+//  Created by John Bender on 2/13/13.
 //  Copyright (c) 2013 General UI, LLC. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface TDAppDelegate : UIResponder <UIApplicationDelegate>
+@interface CDAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
