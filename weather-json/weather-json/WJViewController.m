@@ -12,6 +12,9 @@ static NSString* const kServerAddress = @"https://weatherparser.herokuapp.com";
 
 
 @interface WJViewController ()
+{
+    __weak IBOutlet UIActivityIndicatorView *spinner;
+}
 
 @end
 
@@ -20,26 +23,24 @@ static NSString* const kServerAddress = @"https://weatherparser.herokuapp.com";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(weatherRefreshed:) name:@"weatherRefreshed" object:nil];
+
+    [self performSelectorInBackground:@selector(refreshWeather) withObject:nil];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-
-+(void) refreshWeather
+-(void) refreshWeather
 {
     NSData *json = [NSData dataWithContentsOfURL:[NSURL URLWithString:kServerAddress]];
     if( [json length] == 0 ) {
 #if DEBUG
-        DLog( @"using fake data..." );
+        NSLog( @"using fake data..." );
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"fake-data" ofType:@"json"];
         json = [NSData dataWithContentsOfFile:filePath];
 #else
-        ALog( @"server returned nothing" );
+        NSLog( @"server returned nothing" );
         return;
 #endif
     }
@@ -49,7 +50,7 @@ static NSString* const kServerAddress = @"https://weatherparser.herokuapp.com";
 
     if (error)
     {
-        ALog(@"Error parsing JSON %@: %@", [[NSString alloc] initWithData:json encoding:NSASCIIStringEncoding], [error localizedDescription]);
+        NSLog(@"Error parsing JSON %@: %@", [[NSString alloc] initWithData:json encoding:NSASCIIStringEncoding], [error localizedDescription]);
         return;
     }
 
@@ -57,11 +58,17 @@ static NSString* const kServerAddress = @"https://weatherparser.herokuapp.com";
     for( NSDictionary *variable in collections ) {
         //NSArray *predictions = [EWWeatherPrediction newWeatherPredictionsFromDictionary:variable];
         //currentForecast[variable[@"variable"]] = predictions;
-        DLog( @"%@", variable[@"variable"] );
+        NSLog( @"%@", variable[@"variable"] );
     }
 
     [[NSNotificationCenter defaultCenter] postNotificationName:@"weatherRefreshed" object:currentForecast];
 }
 
+
+-(void) weatherRefreshed:(NSNotification*)note
+{
+    [spinner stopAnimating];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+}
 
 @end
