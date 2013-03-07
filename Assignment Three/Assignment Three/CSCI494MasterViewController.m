@@ -6,6 +6,8 @@
 //  Copyright (c) 2013 Andrew Wilson. All rights reserved.
 //
 
+// On the right track, 50%. For starters, you should be using "push" not "replace" segues.
+
 #import "CSCI494MasterViewController.h"
 
 #import "CSCI494DetailViewController.h"
