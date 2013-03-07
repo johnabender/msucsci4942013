@@ -1,0 +1,35 @@
+-//
+2    	
+-//  main.m
+3	  	
+-//  Flipside Test
+4	  	
+-//
+5	  	
+-//  Created by Andrew Wilson on 1/29/13.
+6	  	
+-//  Copyright (c) 2013 Andrew Wilson. All rights reserved.
+7	  	
+-//
+8	  	
+-
+9	  	
+-#import <UIKit/UIKit.h>
+10	  	
+-
+11	  	
+-#import "CSCI494AppDelegate.h"
+12	  	
+-
+13	  	
+-int main(int argc, char *argv[])
+14	  	
+-{
+15	  	
+-    @autoreleasepool {
+16	  	
+-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([CSCI494AppDelegate class]));
+17	  	
+-    }
+18	  	
+-}

@@ -1,20 +1,18 @@
 //
-//  CSCI494ViewController.m
-//  iOS Assignment 1
+//  CSCI494FlipsideViewController.m
+//  iOSAssignment1
 //
 //  Created by Andrew Wilson on 1/28/13.
 //  Copyright (c) 2013 Andrew Wilson. All rights reserved.
 //
 
-// good job, 100%
+#import "CSCI494FlipsideViewController.h"
 
-#import "CSCI494ViewController.h"
-
-@interface CSCI494ViewController ()
+@interface CSCI494FlipsideViewController ()
 
 @end
 
-@implementation CSCI494ViewController
+@implementation CSCI494FlipsideViewController
 
 - (void)viewDidLoad
 {
@@ -28,10 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Actions
 
-- (IBAction)wonderfulbutton:(id)sender {
-    
-    NSString *wonderful = [[NSString alloc] initWithFormat:@"WONDERFUL!!!!!!"];
-  self.label.text = wonderful;
+- (IBAction)done:(id)sender
+{
+    [self.delegate flipsideViewControllerDidFinish:self];
 }
+
 @end

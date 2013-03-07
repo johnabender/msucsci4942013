@@ -1,0 +1,29 @@
+-//
+2    	
+-// Prefix header for all source files of the 'Flipside Test' target in the 'Flipside Test' project
+3	  	
+-//
+4	  	
+-
+5	  	
+-#import <Availability.h>
+6	  	
+-
+7	  	
+-#ifndef __IPHONE_5_0
+8	  	
+-#warning "This project uses features only available in iOS SDK 5.0 and later."
+9	  	
+-#endif
+10	  	
+-
+11	  	
+-#ifdef __OBJC__
+12	  	
+-    #import <UIKit/UIKit.h>
+13	  	
+-    #import <Foundation/Foundation.h>
+14	  	
+-    #import <CoreData/CoreData.h>
+15	  	
+-#endif
