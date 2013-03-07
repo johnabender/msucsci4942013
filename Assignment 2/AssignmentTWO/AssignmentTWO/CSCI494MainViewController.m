@@ -6,6 +6,9 @@
 //  Copyright (c) 2013 Andrew Wilson. All rights reserved.
 //
 
+// Most of the way there, 75%. I fixed a bug in the storyboard that was causing
+// a crash. Also, there's nothing happening in the Draw() method - requires a UIView subclass.
+
 #import "CSCI494MainViewController.h"
 
 @interface CSCI494MainViewController ()
