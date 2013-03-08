@@ -6,6 +6,14 @@
 //  Copyright (c) 2013 Andrew Wilson. All rights reserved.
 //
 
+// The list of variables should be read from the server, not hard-coded.
+// And why are you using NSUserDefaults? The data are coming from the server, not
+// from disk.
+// No date picker.
+// No text view.
+// No display of weather data.
+// 25%
+
 #import "Assignment_5ViewController.h"
 
 static NSString* const kServerAddress = @"https://weatherparser.herokuapp.com";
