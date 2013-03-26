@@ -22,6 +22,9 @@ static NSString* const kServerAddress = @"https://weatherparser.herokuapp.com";
 @synthesize name;
 @synthesize password;
 @synthesize weatherVariable;
+@synthesize pageControl;
+@synthesize imageView1, imageView2;
+
 NSMutableArray *weather;
 NSString *weatherVariableSelected;
 
@@ -31,6 +34,21 @@ NSString *weatherVariableSelected;
 
 - (void)viewDidLoad
 {
+    //---initialize the first imageview to display an image---
+    [imageView1 setImage:[UIImage imageNamed: @"sun.jpeg"]];
+    tempImageView = imageView2;
+    
+    //---make the first imageview visible and hide the second---
+    [imageView1 setHidden:NO];
+    [imageView2 setHidden:YES];
+    
+    //---add the event handler for the page control---
+    [pageControl addTarget:self
+                    action:@selector(pageTurning:)
+          forControlEvents:UIControlEventValueChanged];
+    
+    prevPage = 0;
+    
     //---create an array containing the weather values---
     weather = [[NSMutableArray alloc] init];
     [weather addObject:@"crainsfc"];
@@ -46,6 +64,67 @@ NSString *weatherVariableSelected;
     [self performSelectorInBackground:@selector(refreshWeather) withObject:nil];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 }
+
+//---when the page control's value is changed---
+- (void) pageTurning: (UIPageControl *) pageController {
+    //---get the page number you can turn to---
+    NSInteger nextPage = [pageController currentPage];
+    switch(nextPage) {
+        case 0:
+            [tempImageView setImage:
+             [UIImage imageNamed:@"sun.jpeg"]];
+            break;
+        case 1:
+            [tempImageView setImage:
+             [UIImage imageNamed:@"snowing.jpeg"]];
+            break;
+        case 2:
+            [tempImageView setImage:
+             [UIImage imageNamed:@"cloud.jpeg"]];
+            break;
+        default:
+            break;
+            
+    }
+    
+    //---switch the two imageview views---
+    if(tempImageView.tag == 0) { //---imageView1---
+        tempImageView = imageView2;
+        bgImageView = imageView1;
+    }
+    else {
+        //---imageView2---
+        tempImageView = imageView1;
+        bgImageView = imageView2;
+    }
+    
+    UIViewAnimationOptions transitionOption;
+    
+    if(nextPage > prevPage)
+        //---if moving from left to right---
+        transitionOption = UIViewAnimationOptionTransitionFlipFromLeft;
+    else
+        //---if moving from right to left---
+        transitionOption = UIViewAnimationOptionTransitionFlipFromRight;
+    
+    //---animate by flipping the images---
+    [UIView transitionWithView:tempImageView
+                      duration:2.5
+                       options:transitionOption
+                    animations:^{
+                        [tempImageView setHidden:YES];
+                    }completion:NULL];
+    
+    [UIView transitionWithView:bgImageView
+                      duration:2.5
+                       options:transitionOption
+                    animations:^{
+                        [tempImageView setHidden:NO];
+                    }completion:NULL];
+    
+    prevPage = nextPage;
+}
+
 
 //---Number of components in the Picker View---
 -(NSInteger) numberOfComponentsInPickerView:(UIPickerView *)pickerView {

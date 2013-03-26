@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C8BD42B5170245650020AE4E /* sun.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C8BD42B2170245650020AE4E /* sun.jpeg */; };
+		C8BD42B6170245650020AE4E /* snowing.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C8BD42B3170245650020AE4E /* snowing.jpeg */; };
+		C8BD42B7170245650020AE4E /* cloud.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C8BD42B4170245650020AE4E /* cloud.jpeg */; };
 		C8C97C4916E004C600564F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C97C4816E004C600564F36 /* UIKit.framework */; };
 		C8C97C4B16E004C600564F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C97C4A16E004C600564F36 /* Foundation.framework */; };
 		C8C97C4D16E004C600564F36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C97C4C16E004C600564F36 /* CoreGraphics.framework */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C8BD42B2170245650020AE4E /* sun.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpeg; sourceTree = "<group>"; };
+		C8BD42B3170245650020AE4E /* snowing.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snowing.jpeg; sourceTree = "<group>"; };
+		C8BD42B4170245650020AE4E /* cloud.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cloud.jpeg; sourceTree = "<group>"; };
 		C8C97C4416E004C600564F36 /* Assignment5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C97C4816E004C600564F36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C8C97C4A16E004C600564F36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -133,6 +139,9 @@
 		C8C97C4F16E004C600564F36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8BD42B2170245650020AE4E /* sun.jpeg */,
+				C8BD42B3170245650020AE4E /* snowing.jpeg */,
+				C8BD42B4170245650020AE4E /* cloud.jpeg */,
 				C8C97C5016E004C600564F36 /* Assignment5-Info.plist */,
 				C8C97C5116E004C600564F36 /* InfoPlist.strings */,
 				C8C97C5416E004C600564F36 /* main.m */,
@@ -241,6 +250,9 @@
 				C8C97C5F16E004C600564F36 /* Default-568h@2x.png in Resources */,
 				C8C97C6216E004C600564F36 /* MainStoryboard.storyboard in Resources */,
 				C8C97CBA16E00F5900564F36 /* Settings.bundle in Resources */,
+				C8BD42B5170245650020AE4E /* sun.jpeg in Resources */,
+				C8BD42B6170245650020AE4E /* snowing.jpeg in Resources */,
+				C8BD42B7170245650020AE4E /* cloud.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

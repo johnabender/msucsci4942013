@@ -13,11 +13,19 @@ UIPickerViewDelegate> {
     IBOutlet UITextField *name;
     IBOutlet UITextField *password;
     IBOutlet UIPickerView *weatherVariable;
+    IBOutlet UIPageControl *pageControl;
+    IBOutlet UIImageView *imageView1;
+    IBOutlet UIImageView *imageView2;
+    UIImageView *tempImageView, *bgImageView;
+    int prevPage;
 }
 
 @property (nonatomic, retain) UITextField *name;
 @property (nonatomic, retain) UITextField *password;
 @property (nonatomic, retain) UIPickerView *weatherVariable;
+@property (nonatomic, retain) UIPageControl *pageControl;
+@property (nonatomic, retain) UIImageView *imageView1;
+@property (nonatomic, retain) UIImageView *imageView2;
 
 - (IBAction)loadValues:(id)sender;
 - (IBAction)saveValues:(id)sender;
