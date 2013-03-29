@@ -9,6 +9,9 @@
 #import "UDViewController.h"
 
 @interface UDViewController ()
+{
+    __weak IBOutlet UIImageView *imageView;
+}
 
 @end
 
@@ -18,6 +21,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    imageView.image = [UIImage imageNamed:@"red"];
+
+    UIInterfaceOrientation o = [[UIApplication sharedApplication] statusBarOrientation];
 }
 
 - (void)didReceiveMemoryWarning

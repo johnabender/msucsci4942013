@@ -19,6 +19,8 @@
 		C3844BB816FCAF7A00F8CCDE /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3844BB616FCAF7A00F8CCDE /* MainStoryboard_iPhone.storyboard */; };
 		C3844BBB16FCAF7A00F8CCDE /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3844BB916FCAF7A00F8CCDE /* MainStoryboard_iPad.storyboard */; };
 		C3844BBE16FCAF7A00F8CCDE /* UDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3844BBD16FCAF7A00F8CCDE /* UDViewController.m */; };
+		C3844BC616FCB00600F8CCDE /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = C3844BC416FCB00600F8CCDE /* red.png */; };
+		C3844BC716FCB00600F8CCDE /* red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3844BC516FCB00600F8CCDE /* red@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		C3844BBA16FCAF7A00F8CCDE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		C3844BBC16FCAF7A00F8CCDE /* UDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UDViewController.h; sourceTree = "<group>"; };
 		C3844BBD16FCAF7A00F8CCDE /* UDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UDViewController.m; sourceTree = "<group>"; };
+		C3844BC416FCB00600F8CCDE /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		C3844BC516FCB00600F8CCDE /* red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		C3844BA516FCAF7A00F8CCDE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3844BC416FCB00600F8CCDE /* red.png */,
+				C3844BC516FCB00600F8CCDE /* red@2x.png */,
 				C3844BA616FCAF7A00F8CCDE /* universal-demo-Info.plist */,
 				C3844BA716FCAF7A00F8CCDE /* InfoPlist.strings */,
 				C3844BAA16FCAF7A00F8CCDE /* main.m */,
@@ -168,6 +174,8 @@
 				C3844BB516FCAF7A00F8CCDE /* Default-568h@2x.png in Resources */,
 				C3844BB816FCAF7A00F8CCDE /* MainStoryboard_iPhone.storyboard in Resources */,
 				C3844BBB16FCAF7A00F8CCDE /* MainStoryboard_iPad.storyboard in Resources */,
+				C3844BC616FCB00600F8CCDE /* red.png in Resources */,
+				C3844BC716FCB00600F8CCDE /* red@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

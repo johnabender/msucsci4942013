@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface GDViewController : UIViewController
+{
+    __weak IBOutlet UIImageView *imageView;
+}
 
 @end

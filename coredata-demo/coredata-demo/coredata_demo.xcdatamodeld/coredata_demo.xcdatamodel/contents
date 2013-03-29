@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12D78" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="FirstObject" representedClassName="FirstObject" syncable="YES">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="secondObjects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SecondObject" inverseName="owner" inverseEntity="SecondObject" syncable="YES"/>
+    </entity>
+    <entity name="SecondObject" representedClassName="SecondObject" syncable="YES">
+        <relationship name="owner" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="FirstObject" inverseName="secondObjects" inverseEntity="FirstObject" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FirstObject" positionX="-63" positionY="-18" width="128" height="73"/>
+        <element name="SecondObject" positionX="126" positionY="-135" width="128" height="58"/>
+    </elements>
+</model>

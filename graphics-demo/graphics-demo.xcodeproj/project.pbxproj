@@ -18,6 +18,8 @@
 		C3844B8016FCAAE800F8CCDE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3844B7F16FCAAE800F8CCDE /* Default-568h@2x.png */; };
 		C3844B8316FCAAE800F8CCDE /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3844B8116FCAAE800F8CCDE /* MainStoryboard.storyboard */; };
 		C3844B8616FCAAE800F8CCDE /* GDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3844B8516FCAAE800F8CCDE /* GDViewController.m */; };
+		C3844B9016FCADD200F8CCDE /* red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C3844B8D16FCAC8100F8CCDE /* red@2x.png */; };
+		C3844B9116FCAE9A00F8CCDE /* red.png in Resources */ = {isa = PBXBuildFile; fileRef = C3844B8C16FCAC8100F8CCDE /* red.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		C3844B8216FCAAE800F8CCDE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		C3844B8416FCAAE800F8CCDE /* GDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDViewController.h; sourceTree = "<group>"; };
 		C3844B8516FCAAE800F8CCDE /* GDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDViewController.m; sourceTree = "<group>"; };
+		C3844B8C16FCAC8100F8CCDE /* red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red.png; sourceTree = "<group>"; };
+		C3844B8D16FCAC8100F8CCDE /* red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		C3844B7016FCAAE800F8CCDE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C3844B8C16FCAC8100F8CCDE /* red.png */,
+				C3844B8D16FCAC8100F8CCDE /* red@2x.png */,
 				C3844B7116FCAAE800F8CCDE /* graphics-demo-Info.plist */,
 				C3844B7216FCAAE800F8CCDE /* InfoPlist.strings */,
 				C3844B7516FCAAE800F8CCDE /* main.m */,
@@ -164,6 +170,8 @@
 				C3844B7E16FCAAE800F8CCDE /* Default@2x.png in Resources */,
 				C3844B8016FCAAE800F8CCDE /* Default-568h@2x.png in Resources */,
 				C3844B8316FCAAE800F8CCDE /* MainStoryboard.storyboard in Resources */,
+				C3844B9016FCADD200F8CCDE /* red@2x.png in Resources */,
+				C3844B9116FCAE9A00F8CCDE /* red.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
