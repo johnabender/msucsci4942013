@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class Export;
+
 @interface Assignment_5AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) Export *exportController;
 
 @end

@@ -7,22 +7,28 @@
 //
 
 #import "Assignment_5AppDelegate.h"
+#import "Export.h"
 
 @implementation Assignment_5AppDelegate
+
+@synthesize exportController = _exportController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     //---initialize the values first---
     // if not all values will be nul
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if(![defaults objectForKey:@"name"])
-        [defaults setObject:@"name" forKey:@"name"];
-    if(![defaults objectForKey:@"password"])
-        [defaults setObject:@"password" forKey:@"password"];
+    if(![defaults objectForKey:@"forecast"])
+        [defaults setObject:@"forecast" forKey:@"forecast"];
     if(![defaults objectForKey:@"weatherVariable"])
         [defaults setObject:@"apcpsfc" forKey:@"weatherVariable"];
     [defaults synchronize];
     return YES;
+    
+    self.exportController = [[Export alloc]
+                              initWithNibName:@"Export"
+                              bundle:nil];
+    self.window.rootViewController = self.exportController;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
