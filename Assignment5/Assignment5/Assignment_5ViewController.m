@@ -14,6 +14,12 @@
 // No display of weather data.
 // 25%
 
+// Final project: Still no display of weather data, except in the console.
+// The "load values" button crashes the app, and I'm not sure why it's there to
+// begin with.
+// Project grade: 60%
+// Course grade: 67%
+
 #import "Assignment_5ViewController.h"
 
 
