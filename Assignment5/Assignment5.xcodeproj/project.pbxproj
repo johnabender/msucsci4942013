@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C81E2E7B1728748D006BF4C1 /* Export.m in Sources */ = {isa = PBXBuildFile; fileRef = C81E2E7A1728748D006BF4C1 /* Export.m */; };
+		C8BD42B5170245650020AE4E /* sun.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C8BD42B2170245650020AE4E /* sun.jpeg */; };
+		C8BD42B6170245650020AE4E /* snowing.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C8BD42B3170245650020AE4E /* snowing.jpeg */; };
+		C8BD42B7170245650020AE4E /* cloud.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C8BD42B4170245650020AE4E /* cloud.jpeg */; };
 		C8C97C4916E004C600564F36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C97C4816E004C600564F36 /* UIKit.framework */; };
 		C8C97C4B16E004C600564F36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C97C4A16E004C600564F36 /* Foundation.framework */; };
 		C8C97C4D16E004C600564F36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8C97C4C16E004C600564F36 /* CoreGraphics.framework */; };
@@ -24,6 +28,7 @@
 		C8C97C7716E004C600564F36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8C97C7516E004C600564F36 /* InfoPlist.strings */; };
 		C8C97C7A16E004C600564F36 /* Assignment5Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8C97C7916E004C600564F36 /* Assignment5Tests.m */; };
 		C8C97CBA16E00F5900564F36 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C8C97CB916E00F5900564F36 /* Settings.bundle */; };
+		C8E28EEC172AD67700CC5AE0 /* WeatherClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C8E28EEB172AD67700CC5AE0 /* WeatherClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C81E2E791728748D006BF4C1 /* Export.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Export.h; sourceTree = "<group>"; };
+		C81E2E7A1728748D006BF4C1 /* Export.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Export.m; sourceTree = "<group>"; };
+		C8BD42B2170245650020AE4E /* sun.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpeg; sourceTree = "<group>"; };
+		C8BD42B3170245650020AE4E /* snowing.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = snowing.jpeg; sourceTree = "<group>"; };
+		C8BD42B4170245650020AE4E /* cloud.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cloud.jpeg; sourceTree = "<group>"; };
 		C8C97C4416E004C600564F36 /* Assignment5.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment5.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8C97C4816E004C600564F36 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C8C97C4A16E004C600564F36 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,6 +70,8 @@
 		C8C97C7816E004C600564F36 /* Assignment5Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assignment5Tests.h; sourceTree = "<group>"; };
 		C8C97C7916E004C600564F36 /* Assignment5Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Assignment5Tests.m; sourceTree = "<group>"; };
 		C8C97CB916E00F5900564F36 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		C8E28EEA172AD67700CC5AE0 /* WeatherClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherClass.h; sourceTree = "<group>"; };
+		C8E28EEB172AD67700CC5AE0 /* WeatherClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +131,16 @@
 		C8C97C4E16E004C600564F36 /* Assignment5 */ = {
 			isa = PBXGroup;
 			children = (
+				C81E2E791728748D006BF4C1 /* Export.h */,
+				C81E2E7A1728748D006BF4C1 /* Export.m */,
 				C8C97C5716E004C600564F36 /* Assignment_5AppDelegate.h */,
 				C8C97C5816E004C600564F36 /* Assignment_5AppDelegate.m */,
 				C8C97C6016E004C600564F36 /* MainStoryboard.storyboard */,
 				C8C97CB916E00F5900564F36 /* Settings.bundle */,
 				C8C97C6316E004C600564F36 /* Assignment_5ViewController.h */,
 				C8C97C6416E004C600564F36 /* Assignment_5ViewController.m */,
+				C8E28EEA172AD67700CC5AE0 /* WeatherClass.h */,
+				C8E28EEB172AD67700CC5AE0 /* WeatherClass.m */,
 				C8C97C4F16E004C600564F36 /* Supporting Files */,
 			);
 			path = Assignment5;
@@ -133,6 +149,9 @@
 		C8C97C4F16E004C600564F36 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8BD42B2170245650020AE4E /* sun.jpeg */,
+				C8BD42B3170245650020AE4E /* snowing.jpeg */,
+				C8BD42B4170245650020AE4E /* cloud.jpeg */,
 				C8C97C5016E004C600564F36 /* Assignment5-Info.plist */,
 				C8C97C5116E004C600564F36 /* InfoPlist.strings */,
 				C8C97C5416E004C600564F36 /* main.m */,
@@ -241,6 +260,9 @@
 				C8C97C5F16E004C600564F36 /* Default-568h@2x.png in Resources */,
 				C8C97C6216E004C600564F36 /* MainStoryboard.storyboard in Resources */,
 				C8C97CBA16E00F5900564F36 /* Settings.bundle in Resources */,
+				C8BD42B5170245650020AE4E /* sun.jpeg in Resources */,
+				C8BD42B6170245650020AE4E /* snowing.jpeg in Resources */,
+				C8BD42B7170245650020AE4E /* cloud.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +300,8 @@
 				C8C97C5516E004C600564F36 /* main.m in Sources */,
 				C8C97C5916E004C600564F36 /* Assignment_5AppDelegate.m in Sources */,
 				C8C97C6516E004C600564F36 /* Assignment_5ViewController.m in Sources */,
+				C81E2E7B1728748D006BF4C1 /* Export.m in Sources */,
+				C8E28EEC172AD67700CC5AE0 /* WeatherClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
