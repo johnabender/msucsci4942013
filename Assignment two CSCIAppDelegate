@@ -1,0 +1,299 @@
+-//
+2    	
+-//  CSCI494AppDelegate.m
+3	  	
+-//  Flipside Test
+4	  	
+-//
+5	  	
+-//  Created by Andrew Wilson on 1/29/13.
+6	  	
+-//  Copyright (c) 2013 Andrew Wilson. All rights reserved.
+7	  	
+-//
+8	  	
+-
+9	  	
+-#import "CSCI494AppDelegate.h"
+10	  	
+-
+11	  	
+-#import "CSCI494MainViewController.h"
+12	  	
+-
+13	  	
+-@implementation CSCI494AppDelegate
+14	  	
+-
+15	  	
+-@synthesize managedObjectContext = _managedObjectContext;
+16	  	
+-@synthesize managedObjectModel = _managedObjectModel;
+17	  	
+-@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+18	  	
+-
+19	  	
+-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+20	  	
+-{
+21	  	
+-    // Override point for customization after application launch.
+22	  	
+-    CSCI494MainViewController *controller = (CSCI494MainViewController *)self.window.rootViewController;
+23	  	
+-    controller.managedObjectContext = self.managedObjectContext;
+24	  	
+-    return YES;
+25	  	
+-}
+26	  	
+-              
+27	  	
+-- (void)applicationWillResignActive:(UIApplication *)application
+28	  	
+-{
+29	  	
+-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+30	  	
+-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+31	  	
+-}
+32	  	
+-
+33	  	
+-- (void)applicationDidEnterBackground:(UIApplication *)application
+34	  	
+-{
+35	  	
+-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+36	  	
+-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+37	  	
+-}
+38	  	
+-
+39	  	
+-- (void)applicationWillEnterForeground:(UIApplication *)application
+40	  	
+-{
+41	  	
+-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+42	  	
+-}
+43	  	
+-
+44	  	
+-- (void)applicationDidBecomeActive:(UIApplication *)application
+45	  	
+-{
+46	  	
+-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+47	  	
+-}
+48	  	
+-
+49	  	
+-- (void)applicationWillTerminate:(UIApplication *)application
+50	  	
+-{
+51	  	
+-    // Saves changes in the application's managed object context before the application terminates.
+52	  	
+-    [self saveContext];
+53	  	
+-}
+54	  	
+-
+55	  	
+-- (void)saveContext
+56	  	
+-{
+57	  	
+-    NSError *error = nil;
+58	  	
+-    NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+59	  	
+-    if (managedObjectContext != nil) {
+60	  	
+-        if ([managedObjectContext hasChanges] && ![managedObjectContext save:&error]) {
+61	  	
+-             // Replace this implementation with code to handle the error appropriately.
+62	  	
+-             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
+63	  	
+-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+64	  	
+-            abort();
+65	  	
+-        } 
+66	  	
+-    }
+67	  	
+-}
+68	  	
+-
+69	  	
+-#pragma mark - Core Data stack
+70	  	
+-
+71	  	
+-// Returns the managed object context for the application.
+72	  	
+-// If the context doesn't already exist, it is created and bound to the persistent store coordinator for the application.
+73	  	
+-- (NSManagedObjectContext *)managedObjectContext
+74	  	
+-{
+75	  	
+-    if (_managedObjectContext != nil) {
+76	  	
+-        return _managedObjectContext;
+77	  	
+-    }
+78	  	
+-    
+79	  	
+-    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+80	  	
+-    if (coordinator != nil) {
+81	  	
+-        _managedObjectContext = [[NSManagedObjectContext alloc] init];
+82	  	
+-        [_managedObjectContext setPersistentStoreCoordinator:coordinator];
+83	  	
+-    }
+84	  	
+-    return _managedObjectContext;
+85	  	
+-}
+86	  	
+-
+87	  	
+-// Returns the managed object model for the application.
+88	  	
+-// If the model doesn't already exist, it is created from the application's model.
+89	  	
+-- (NSManagedObjectModel *)managedObjectModel
+90	  	
+-{
+91	  	
+-    if (_managedObjectModel != nil) {
+92	  	
+-        return _managedObjectModel;
+93	  	
+-    }
+94	  	
+-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Flipside_Test" withExtension:@"momd"];
+95	  	
+-    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+96	  	
+-    return _managedObjectModel;
+97	  	
+-}
+98	  	
+-
+99	  	
+-// Returns the persistent store coordinator for the application.
+100	  	
+-// If the coordinator doesn't already exist, it is created and the application's store added to it.
+101	  	
+-- (NSPersistentStoreCoordinator *)persistentStoreCoordinator
+102	  	
+-{
+103	  	
+-    if (_persistentStoreCoordinator != nil) {
+104	  	
+-        return _persistentStoreCoordinator;
+105	  	
+-    }
+106	  	
+-    
+107	  	
+-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Flipside_Test.sqlite"];
+108	  	
+-    
+109	  	
+-    NSError *error = nil;
+110	  	
+-    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+111	  	
+-    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+112	  	
+-        /*
+113	  	
+-         Replace this implementation with code to handle the error appropriately.
+114	  	
+-         
+115	  	
+-         abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
+116	  	
+-         
+117	  	
+-         Typical reasons for an error here include:
+118	  	
+-         * The persistent store is not accessible;
+119	  	
+-         * The schema for the persistent store is incompatible with current managed object model.
+120	  	
+-         Check the error message to determine what the actual problem was.
+121	  	
+-         
+122	  	
+-         
+123	  	
+-         If the persistent store is not accessible, there is typically something wrong with the file path. Often, a file URL is pointing into the application's resources directory instead of a writeable directory.
+124	  	
+-         
+125	  	
+-         If you encounter schema incompatibility errors during development, you can reduce their frequency by:
+126	  	
+-         * Simply deleting the existing store:
+127	  	
+-         [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil]
+128	  	
+-         
+129	  	
+-         * Performing automatic lightweight migration by passing the following dictionary as the options parameter:
+130	  	
+-         @{NSMigratePersistentStoresAutomaticallyOption:@YES, NSInferMappingModelAutomaticallyOption:@YES}
+131	  	
+-         
+132	  	
+-         Lightweight migration will only work for a limited set of schema changes; consult "Core Data Model Versioning and Data Migration Programming Guide" for details.
+133	  	
+-         
+134	  	
+-         */
+135	  	
+-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+136	  	
+-        abort();
+137	  	
+-    }    
+138	  	
+-    
+139	  	
+-    return _persistentStoreCoordinator;
+140	  	
+-}
+141	  	
+-
+142	  	
+-#pragma mark - Application's Documents directory
+143	  	
+-
+144	  	
+-// Returns the URL to the application's Documents directory.
+145	  	
+-- (NSURL *)applicationDocumentsDirectory
+146	  	
+-{
+147	  	
+-    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+148	  	
+-}
+149	  	
+-
+150	  	
+-@end
